@@ -26,7 +26,8 @@
   height: 45px;
   margin-bottom: 20px;
   cursor: pointer;
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -35,14 +36,16 @@
   height: 45px;
   margin-bottom: 20px;
   cursor: pointer;
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
 .image-1 {
   width: 39%;
   height: 45px;
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
   margin-top: 5px;
@@ -52,7 +55,8 @@
   margin: -10px 0 0 130px ;
   width: 450px;
   height: 600px;
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -92,24 +96,15 @@
     margin-top: 19px;
   }
 
-  .image-2 {
-    margin-top: 40px;
-    width: 370px;
-    height: 450px;
-    margin-left: 0;
-  }
-
   .text-3 {
     text-align: center;
     margin-top: 20px;
   }
 
-  .image {
+  .AppImage,
+  .GoogleImage {
     width: 130px;
-  }
-
-  .images {
-    text-align: center;
+    height: 40px;
   }
 
   .subtext {
@@ -118,11 +113,15 @@
   }
 
   .image-1 {
-    text-align: center;
-    margin-top: 3px;
+    width: 210px;
+    height: 50px;
+    margin: 3px 0 0 80px;
   }
 
-  .image-1-1 {
-    width: 200px;
+  .PhoneImage {
+    justify-content: center;
+    width: 350px;
+    height: 450px;
+    margin: 50px 0 0 15px;
   }
 }

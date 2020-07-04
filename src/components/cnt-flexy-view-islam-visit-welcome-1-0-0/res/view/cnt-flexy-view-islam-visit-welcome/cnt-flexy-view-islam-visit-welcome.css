@@ -22,7 +22,8 @@
 
 .img {
   margin-top: 20px;
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
   background-position: center;
   width: 80px;
   height: 75px;
@@ -34,5 +35,9 @@
   .container {
     max-width: 400px;
     height: 230px;
+  }
+
+  .img {
+
   }
 }

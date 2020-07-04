@@ -1,8 +1,9 @@
 .image {
-  width: 35%;
+  width: 120px;
   height: 100%;
   margin-top: 30px;
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -30,6 +31,7 @@
 @media only screen and (max-width: 400px) {
   .container {
     max-width: 400px;
+    margin-bottom: 30px;
   }
   .sing {
     margin-right: 0;

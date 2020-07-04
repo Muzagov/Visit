@@ -35,7 +35,7 @@ export class CntFlexyViewIslamVisitWelcome implements ComponentInterface {
     const getWelcome = this.payload.map((item) => {
       return (
         <div class="row justify-content-center">
-          <div class="col-1">
+          <div class="col-auto">
            <div class="img" style={{ backgroundImage: "url(" + StorageIslamVisit.prefix + item.image + ")" }} onClick={() => this.clickWelcomeImage.emit('WelcomeImage')}>
             </div>
           </div>
