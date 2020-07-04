@@ -1,0 +1,67 @@
+.tell {
+  background-color: #e7ece8;
+  height: 510px;
+}
+
+.text-1 {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 2.7em;
+  margin-top: 150px;
+  color: #000;
+}
+
+.text-2 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.subtext {
+  margin-bottom: 10px;
+  margin-top: 40px;
+  font-size: 23px;
+  font-weight: 700;
+  color: #000;
+}
+
+.AppImage {
+  width: 150px;
+  height: 45px;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.GoogleImage {
+  width: 150px;
+  height: 45px;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media only screen and (max-width: 400px) {
+
+  .text {
+    text-align: center;
+  }
+
+  .text-1 {
+    font-size: 1.7em;
+  }
+
+  .text-2 {
+    font-size: 1em;
+  }
+
+  .subtext {
+    font-size: 1em;
+  }
+
+  .image {
+    width: 130px;
+  }
+}

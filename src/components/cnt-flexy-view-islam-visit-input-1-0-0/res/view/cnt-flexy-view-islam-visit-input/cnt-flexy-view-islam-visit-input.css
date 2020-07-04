@@ -1,0 +1,53 @@
+.container {
+  margin-top: 100px;
+}
+
+.input {
+  width: 350px;
+  height: 39px;
+  margin-right: 3px;
+  text-align: left;
+  opacity: .7;
+  padding-left: 10px;
+  margin-top: 7px;
+}
+
+.btn1 {
+  border-radius: 2px;
+  border: none;
+  background-color: #000;
+  color: #f0f0f0;
+  width: 160px;
+  height: 39px;
+}
+
+.btn1:hover {
+ margin: -1px 0 1px 0;
+
+}
+
+
+.text {
+  justify-content: end;
+  margin-top: 20px;
+  color: #737373;
+  font-size: .8em;
+}
+
+.row {
+  flex-direction: column;
+  direction: rtl;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+
+  .input {
+    width: 240px;
+  }
+
+  .btn1 {
+    width: 110px;
+  }
+}

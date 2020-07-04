@@ -1,0 +1,38 @@
+.welcome {
+  background-color: #000;
+}
+
+.container {
+  text-align: center;
+  height: 180px;
+}
+
+.text-1 {
+  color: white;
+  font-size: 20px;
+}
+
+.text-2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 30px;
+  font-family: 'Montserrat', sans-serif;;
+}
+
+.img {
+  margin-top: 20px;
+  background-size: cover;
+  background-position: center;
+  width: 80px;
+  height: 75px;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+  .container {
+    max-width: 400px;
+    height: 230px;
+  }
+}

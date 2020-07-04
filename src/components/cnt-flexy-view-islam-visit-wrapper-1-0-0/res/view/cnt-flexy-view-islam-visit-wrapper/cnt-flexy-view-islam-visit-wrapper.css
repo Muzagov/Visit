@@ -1,0 +1,128 @@
+.container {
+  margin-top: 80px;
+}
+
+
+.text-1-1 {
+  font-size: 3.3rem;
+  margin-bottom: 6px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-2 {
+  font-size: 18px;
+}
+
+.text-3 {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 700
+}
+
+.AppImage {
+  width: 150px;
+  height: 45px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+
+.GoogleImage {
+  width: 150px;
+  height: 45px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-1 {
+  width: 39%;
+  height: 45px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.PhoneImage {
+  margin: -10px 0 0 130px ;
+  width: 450px;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-cell {
+  margin-right: 10px;
+  border-radius: 5px;
+  width: 150px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.name {
+  font-size: 13px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 400px) {
+  .container {
+    margin-top: 0;
+    max-width: 400px;
+  }
+
+  .text-1-1 {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .text-2 {
+    margin-bottom: 0;
+    font-size: 0.9em;
+    line-height: 22px;
+    margin-top: 19px;
+  }
+
+  .image-2 {
+    margin-top: 40px;
+    width: 370px;
+    height: 450px;
+    margin-left: 0;
+  }
+
+  .text-3 {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .image {
+    width: 130px;
+  }
+
+  .images {
+    text-align: center;
+  }
+
+  .subtext {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .image-1 {
+    text-align: center;
+    margin-top: 3px;
+  }
+
+  .image-1-1 {
+    width: 200px;
+  }
+}
