@@ -84,20 +84,6 @@ export class CntFlexyViewIslamVisitWrapper implements ComponentInterface {
 
 
   render() {
-
-    const getCarousel = this.forCarousel.map((item) => {
-      return (
-        <div class="carousel-c">
-              <div class="carousel-cell"
-                   style={{ backgroundImage: "url(" + StorageIslamVisit.prefix + item.image + ")" }}>
-              </div>
-                <div class="name">
-                  {item.name}
-                </div>
-                </div>
-      )
-    });
-
     const getWrapper = this.payload.map((item) => {
       return (
         <div class="row d-flex">
@@ -118,7 +104,55 @@ export class CntFlexyViewIslamVisitWrapper implements ComponentInterface {
               <div class="col-12">
                 <div class="main-carousel" data-flickity='{ "cellAlign": "right", "contain": true }'>
                   <div class="carousel" data-flickity='{ "autoPlay": true }'>
-                    {getCarousel}
+                    <div class="carousel-c">
+                    <div class="carousel-cell" style={{ backgroundImage: "url(" + StorageIslamVisit.prefix + item.image1 + ")" }}>
+                    </div>
+                      <div class="name">
+                        {item.name1}
+                      </div>
+                    </div>
+                    <div class="carousel-c">
+                      <div class="carousel-cell" style={{ backgroundImage: "url(" + StorageIslamVisit.prefix + item.image2 + ")" }}>
+                      </div>
+                      <div class="name">
+                        {item.name2}
+                      </div>
+                    </div>
+                    <div class="carousel">
+                      <div class="carousel-cell" style={{ backgroundImage: "url(" + StorageIslamVisit.prefix + item.image3 + ")" }}>
+                      </div>
+                      <div class="name">
+                        {item.name3}
+                      </div>
+                    </div>
+                   <div class="carousel">
+                     <div class="carousel-cell" style={{ backgroundImage: "url(" + StorageIslamVisit.prefix + item.image4 + ")" }}>
+                     </div>
+                     <div class="name">
+                       {item.name4}
+                     </div>
+                   </div>
+                    <div class="carousel">
+                      <div class="carousel-cell" style={{ backgroundImage: "url(" + StorageIslamVisit.prefix + item.image5 + ")" }}>
+                      </div>
+                      <div class="name">
+                        {item.name5}
+                      </div>
+                    </div>
+                   <div class="carousel">
+                     <div class="carousel-cell" style={{ backgroundImage: "url(" + StorageIslamVisit.prefix + item.image6 + ")" }}>
+                     </div>
+                     <div class="name">
+                       {item.name6}
+                     </div>
+                   </div>
+                    <div class="carousel">
+                      <div class="carousel-cell" style={{ backgroundImage: "url(" + StorageIslamVisit.prefix + item.image7 + ")" }}>
+                      </div>
+                      <div class="name">
+                        {item.name7}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

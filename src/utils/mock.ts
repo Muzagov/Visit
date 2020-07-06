@@ -27,19 +27,17 @@ export const forWrapper = [
     GoogleImage: 'play_store_mocha.png',
     subtext: 'We are featured on ProductHunt!',
     ProductImage: 'top-post-badge.svg',
-    PhoneImage: 'page_social-scaled.jpg'
+    PhoneImage: 'page_social-scaled.jpg',
+    image1: 'image-1.jpg', name1: '@candas',
+    image2: 'image-2.jpg', name2: '@scarlenn',
+    image3: 'image-3.jpg', name3: '@fab',
+    image4: 'image-4.jpg', name4: '@Ophelie',
+    image5: 'image-5.jpg', name5: '@achronicvoice',
+    image6: 'image-6.jpg', name6: '@sharnacious',
+    image7: 'image-7.jpg', name7: '@CoachRyan',
   }
 ];
 
-export const forCarousel = [
-  {id: 1, image: 'image-1.jpg', name: '@candas'},
-  {id: 2, image: 'image-2.jpg', name: '@scarlenn'},
-  {id: 3, image: 'image-3.jpg', name: '@fab'},
-  {id: 4, image: 'image-4.jpg', name: '@Ophelie'},
-  {id: 5, image: 'image-5.jpg', name: '@achronicvoice'},
-  {id: 6, image: 'image-6.jpg', name: '@sharnacious'},
-  {id: 7, image: 'image-7.jpg', name: '@CoachRyan'},
-]
 
 export const forCreate = [
   {

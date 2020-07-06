@@ -79,7 +79,6 @@ export namespace Components {
         "payload": any;
     }
     interface CntFlexyViewIslamVisitWrapper100 {
-        "forCarousel": any;
         "pathToAssets": string;
         "payload": any;
     }
@@ -409,7 +408,6 @@ declare namespace LocalJSX {
         "payload"?: any;
     }
     interface CntFlexyViewIslamVisitWrapper100 {
-        "forCarousel"?: any;
         "pathToAssets"?: string;
         "payload"?: any;
     }

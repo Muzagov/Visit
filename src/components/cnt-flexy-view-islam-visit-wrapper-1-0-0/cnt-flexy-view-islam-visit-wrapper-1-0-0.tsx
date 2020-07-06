@@ -11,7 +11,6 @@ export class CntFlexyViewIslamVisitWrapper100 implements ComponentInterface {
 
   @Prop() payload: any;
 
-  @Prop() forCarousel: any;
 
   @Prop() pathToAssets: string;
 
@@ -34,7 +33,7 @@ export class CntFlexyViewIslamVisitWrapper100 implements ComponentInterface {
                                             onClickWrapperSubText={(item) => clicker(item)}
                                             onClickWrapperProductImage={(item) => clicker(item)}
                                             onClickWrapperPhoneImage={(item) => clicker(item)}
-                                            forCarousel={this.forCarousel}/>
+                                            />
       </div>
     );
   }

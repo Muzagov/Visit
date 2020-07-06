@@ -1,6 +1,5 @@
 import {Component, h,} from '@stencil/core';
 import {
-  forCarousel,
   forCreate,
   forFooter,
   forHeader,
@@ -25,7 +24,6 @@ export class MyComponent {
         <cnt-flexy-view-islam-visit-header-1-0-0 categories={forHeader}
                                                  pathToAssets={this.testPathToAssets}/>
         <cnt-flexy-view-islam-visit-wrapper-1-0-0 payload={forWrapper}
-                                                  forCarousel={forCarousel}
                                                   pathToAssets={this.testPathToAssets}/>
         <cnt-flexy-view-islam-visit-create-1-0-0 payload={forCreate}
                                                  pathToAssets={this.testPathToAssets}/>
