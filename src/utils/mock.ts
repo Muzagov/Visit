@@ -86,6 +86,7 @@ export const forFooter = [
 
 export const forWindow = [
   {
+    id: 1,
     Heading: 'Share',
     Exit: 'x',
     TwitterIcon: 'fa fa-twitter',

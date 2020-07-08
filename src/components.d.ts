@@ -70,12 +70,6 @@ export namespace Components {
         "pathToAssets": string;
         "payload": any;
     }
-    interface CntFlexyViewIslamVisitWindow {
-        "payload": any;
-    }
-    interface CntFlexyViewIslamVisitWindow100 {
-        "payload": any;
-    }
     interface CntFlexyViewIslamVisitWrapper {
         "forCarousel": any;
         /**
@@ -86,6 +80,16 @@ export namespace Components {
     }
     interface CntFlexyViewIslamVisitWrapper100 {
         "pathToAssets": string;
+        "payload": any;
+    }
+    interface CntFlexyViewIslamWindow {
+        /**
+          * Приём данных из массива для вывода
+         */
+        "intro": CntFlexyViewIslamWindow[];
+        "payload": any;
+    }
+    interface CntFlexyViewIslamWindow100 {
         "payload": any;
     }
     interface MyComponent {
@@ -164,18 +168,6 @@ declare global {
         prototype: HTMLCntFlexyViewIslamVisitWelcome100Element;
         new (): HTMLCntFlexyViewIslamVisitWelcome100Element;
     };
-    interface HTMLCntFlexyViewIslamVisitWindowElement extends Components.CntFlexyViewIslamVisitWindow, HTMLStencilElement {
-    }
-    var HTMLCntFlexyViewIslamVisitWindowElement: {
-        prototype: HTMLCntFlexyViewIslamVisitWindowElement;
-        new (): HTMLCntFlexyViewIslamVisitWindowElement;
-    };
-    interface HTMLCntFlexyViewIslamVisitWindow100Element extends Components.CntFlexyViewIslamVisitWindow100, HTMLStencilElement {
-    }
-    var HTMLCntFlexyViewIslamVisitWindow100Element: {
-        prototype: HTMLCntFlexyViewIslamVisitWindow100Element;
-        new (): HTMLCntFlexyViewIslamVisitWindow100Element;
-    };
     interface HTMLCntFlexyViewIslamVisitWrapperElement extends Components.CntFlexyViewIslamVisitWrapper, HTMLStencilElement {
     }
     var HTMLCntFlexyViewIslamVisitWrapperElement: {
@@ -187,6 +179,18 @@ declare global {
     var HTMLCntFlexyViewIslamVisitWrapper100Element: {
         prototype: HTMLCntFlexyViewIslamVisitWrapper100Element;
         new (): HTMLCntFlexyViewIslamVisitWrapper100Element;
+    };
+    interface HTMLCntFlexyViewIslamWindowElement extends Components.CntFlexyViewIslamWindow, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewIslamWindowElement: {
+        prototype: HTMLCntFlexyViewIslamWindowElement;
+        new (): HTMLCntFlexyViewIslamWindowElement;
+    };
+    interface HTMLCntFlexyViewIslamWindow100Element extends Components.CntFlexyViewIslamWindow100, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewIslamWindow100Element: {
+        prototype: HTMLCntFlexyViewIslamWindow100Element;
+        new (): HTMLCntFlexyViewIslamWindow100Element;
     };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
@@ -207,10 +211,10 @@ declare global {
         "cnt-flexy-view-islam-visit-tell-1-0-0": HTMLCntFlexyViewIslamVisitTell100Element;
         "cnt-flexy-view-islam-visit-welcome": HTMLCntFlexyViewIslamVisitWelcomeElement;
         "cnt-flexy-view-islam-visit-welcome-1-0-0": HTMLCntFlexyViewIslamVisitWelcome100Element;
-        "cnt-flexy-view-islam-visit-window": HTMLCntFlexyViewIslamVisitWindowElement;
-        "cnt-flexy-view-islam-visit-window-1-0-0": HTMLCntFlexyViewIslamVisitWindow100Element;
         "cnt-flexy-view-islam-visit-wrapper": HTMLCntFlexyViewIslamVisitWrapperElement;
         "cnt-flexy-view-islam-visit-wrapper-1-0-0": HTMLCntFlexyViewIslamVisitWrapper100Element;
+        "cnt-flexy-view-islam-window": HTMLCntFlexyViewIslamWindowElement;
+        "cnt-flexy-view-islam-window-1-0-0": HTMLCntFlexyViewIslamWindow100Element;
         "my-component": HTMLMyComponentElement;
     }
 }
@@ -387,16 +391,6 @@ declare namespace LocalJSX {
         "pathToAssets"?: string;
         "payload"?: any;
     }
-    interface CntFlexyViewIslamVisitWindow {
-        /**
-          * Закрытие модального окна формы
-         */
-        "onCloseForm"?: (event: CustomEvent<any>) => void;
-        "payload"?: any;
-    }
-    interface CntFlexyViewIslamVisitWindow100 {
-        "payload"?: any;
-    }
     interface CntFlexyViewIslamVisitWrapper {
         "forCarousel"?: any;
         /**
@@ -441,6 +435,108 @@ declare namespace LocalJSX {
         "pathToAssets"?: string;
         "payload"?: any;
     }
+    interface CntFlexyViewIslamWindow {
+        /**
+          * Приём данных из массива для вывода
+         */
+        "intro"?: CntFlexyViewIslamWindow[];
+        /**
+          * Клик по exit
+         */
+        "onClickWindowExit"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по Facebook
+         */
+        "onClickWindowFacebook"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по FacebookText
+         */
+        "onClickWindowFacebookText"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по heading
+         */
+        "onClickWindowHeading"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по Input
+         */
+        "onClickWindowInput"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по Instagram
+         */
+        "onClickWindowInstagram"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по InstagramText
+         */
+        "onClickWindowInstagramText"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по Link
+         */
+        "onClickWindowLink"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по LinkIcon
+         */
+        "onClickWindowLinkIcon"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по Messenger
+         */
+        "onClickWindowMessenger"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по MessengerText
+         */
+        "onClickWindowMessengerText"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по Reddit
+         */
+        "onClickWindowReddit"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по RedditText
+         */
+        "onClickWindowRedditText"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по Telegram
+         */
+        "onClickWindowTelegram"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по TelegramText
+         */
+        "onClickWindowTelegramText"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по Twitter
+         */
+        "onClickWindowTwitter"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по TwitterText
+         */
+        "onClickWindowTwitterText"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по WeChat
+         */
+        "onClickWindowWeChat"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по WeChatText
+         */
+        "onClickWindowWeChatText"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по Whatsapp
+         */
+        "onClickWindowWhatsapp"?: (event: CustomEvent<any>) => void;
+        /**
+          * Клик по WhatsappText
+         */
+        "onClickWindowWhatsappText"?: (event: CustomEvent<any>) => void;
+        /**
+          * Закрытие модального окна формы
+         */
+        "onCloseForm"?: (event: CustomEvent<any>) => void;
+        "payload"?: any;
+    }
+    interface CntFlexyViewIslamWindow100 {
+        /**
+          * Закрытие модального окна формы
+         */
+        "onCloseForm"?: (event: CustomEvent<any>) => void;
+        "payload"?: any;
+    }
     interface MyComponent {
     }
     interface IntrinsicElements {
@@ -456,10 +552,10 @@ declare namespace LocalJSX {
         "cnt-flexy-view-islam-visit-tell-1-0-0": CntFlexyViewIslamVisitTell100;
         "cnt-flexy-view-islam-visit-welcome": CntFlexyViewIslamVisitWelcome;
         "cnt-flexy-view-islam-visit-welcome-1-0-0": CntFlexyViewIslamVisitWelcome100;
-        "cnt-flexy-view-islam-visit-window": CntFlexyViewIslamVisitWindow;
-        "cnt-flexy-view-islam-visit-window-1-0-0": CntFlexyViewIslamVisitWindow100;
         "cnt-flexy-view-islam-visit-wrapper": CntFlexyViewIslamVisitWrapper;
         "cnt-flexy-view-islam-visit-wrapper-1-0-0": CntFlexyViewIslamVisitWrapper100;
+        "cnt-flexy-view-islam-window": CntFlexyViewIslamWindow;
+        "cnt-flexy-view-islam-window-1-0-0": CntFlexyViewIslamWindow100;
         "my-component": MyComponent;
     }
 }
@@ -479,10 +575,10 @@ declare module "@stencil/core" {
             "cnt-flexy-view-islam-visit-tell-1-0-0": LocalJSX.CntFlexyViewIslamVisitTell100 & JSXBase.HTMLAttributes<HTMLCntFlexyViewIslamVisitTell100Element>;
             "cnt-flexy-view-islam-visit-welcome": LocalJSX.CntFlexyViewIslamVisitWelcome & JSXBase.HTMLAttributes<HTMLCntFlexyViewIslamVisitWelcomeElement>;
             "cnt-flexy-view-islam-visit-welcome-1-0-0": LocalJSX.CntFlexyViewIslamVisitWelcome100 & JSXBase.HTMLAttributes<HTMLCntFlexyViewIslamVisitWelcome100Element>;
-            "cnt-flexy-view-islam-visit-window": LocalJSX.CntFlexyViewIslamVisitWindow & JSXBase.HTMLAttributes<HTMLCntFlexyViewIslamVisitWindowElement>;
-            "cnt-flexy-view-islam-visit-window-1-0-0": LocalJSX.CntFlexyViewIslamVisitWindow100 & JSXBase.HTMLAttributes<HTMLCntFlexyViewIslamVisitWindow100Element>;
             "cnt-flexy-view-islam-visit-wrapper": LocalJSX.CntFlexyViewIslamVisitWrapper & JSXBase.HTMLAttributes<HTMLCntFlexyViewIslamVisitWrapperElement>;
             "cnt-flexy-view-islam-visit-wrapper-1-0-0": LocalJSX.CntFlexyViewIslamVisitWrapper100 & JSXBase.HTMLAttributes<HTMLCntFlexyViewIslamVisitWrapper100Element>;
+            "cnt-flexy-view-islam-window": LocalJSX.CntFlexyViewIslamWindow & JSXBase.HTMLAttributes<HTMLCntFlexyViewIslamWindowElement>;
+            "cnt-flexy-view-islam-window-1-0-0": LocalJSX.CntFlexyViewIslamWindow100 & JSXBase.HTMLAttributes<HTMLCntFlexyViewIslamWindow100Element>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }

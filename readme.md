@@ -7,7 +7,7 @@
 - cnt-flexy-view-islam-visit-create-1-0-0
 - cnt-flexy-view-islam-visit-tell-1-0-0
 - cnt-flexy-view-islam-visit-input-1-0-0
-- cnt-flexy-view-islam-visit-window-1-0-0
+- cnt-flexy-view-islam-window-1-0-0
 
 ##### Хедер
 

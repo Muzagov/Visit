@@ -19,9 +19,23 @@ export class MyComponent {
 
   @State() popupComplited: boolean;
 
+  componentDidLoad() {
+    this.popupComplited = false;
+
+  }
+
   render() {
+
     return (
-      <div>
+      <div >
+        {
+          this.popupComplited ? <cnt-flexy-view-islam-window-1-0-0 payload={forWindow} onCloseForm={() => {
+              this.closeForm();
+            }}/> :
+            ''
+        }
+
+        <div onClick={ () => this.openForm()}>
         <cnt-flexy-view-islam-visit-welcome-1-0-0 payload={forWelcome}
                                                   pathToAssets={this.testPathToAssets}/>
         <cnt-flexy-view-islam-visit-header-1-0-0 categories={forHeader}
@@ -33,22 +47,28 @@ export class MyComponent {
         <cnt-flexy-view-islam-visit-tell-1-0-0 payload={forTell}
                                                pathToAssets={this.testPathToAssets}/>
         <cnt-flexy-view-islam-visit-input-1-0-0 payload={forInput}/>
-        <cnt-flexy-view-islam-visit-window-1-0-0 payload={forWindow}/>
+
         <cnt-flexy-view-islam-visit-footer-1-0-0 categories={forFooter}/>
+        </div>
       </div>
     )
   }
+
   /**
    * временный префикс ссылки для картинок
    */
   public testPathToAssets =
     "http://cdn.ramman.net/flexy-view/islam/visit/1.01/assets/";
 
+
   /**
    * Вызов модального окна формы
    */
   public openForm() {
-    this.popupComplited = true;
+    if (this.popupComplited === false){
+      this.popupComplited = true;
+    }
+
   }
 
   /**
