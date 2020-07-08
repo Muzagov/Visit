@@ -70,6 +70,12 @@ export namespace Components {
         "pathToAssets": string;
         "payload": any;
     }
+    interface CntFlexyViewIslamVisitWindow {
+        "payload": any;
+    }
+    interface CntFlexyViewIslamVisitWindow100 {
+        "payload": any;
+    }
     interface CntFlexyViewIslamVisitWrapper {
         "forCarousel": any;
         /**
@@ -158,6 +164,18 @@ declare global {
         prototype: HTMLCntFlexyViewIslamVisitWelcome100Element;
         new (): HTMLCntFlexyViewIslamVisitWelcome100Element;
     };
+    interface HTMLCntFlexyViewIslamVisitWindowElement extends Components.CntFlexyViewIslamVisitWindow, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewIslamVisitWindowElement: {
+        prototype: HTMLCntFlexyViewIslamVisitWindowElement;
+        new (): HTMLCntFlexyViewIslamVisitWindowElement;
+    };
+    interface HTMLCntFlexyViewIslamVisitWindow100Element extends Components.CntFlexyViewIslamVisitWindow100, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewIslamVisitWindow100Element: {
+        prototype: HTMLCntFlexyViewIslamVisitWindow100Element;
+        new (): HTMLCntFlexyViewIslamVisitWindow100Element;
+    };
     interface HTMLCntFlexyViewIslamVisitWrapperElement extends Components.CntFlexyViewIslamVisitWrapper, HTMLStencilElement {
     }
     var HTMLCntFlexyViewIslamVisitWrapperElement: {
@@ -189,6 +207,8 @@ declare global {
         "cnt-flexy-view-islam-visit-tell-1-0-0": HTMLCntFlexyViewIslamVisitTell100Element;
         "cnt-flexy-view-islam-visit-welcome": HTMLCntFlexyViewIslamVisitWelcomeElement;
         "cnt-flexy-view-islam-visit-welcome-1-0-0": HTMLCntFlexyViewIslamVisitWelcome100Element;
+        "cnt-flexy-view-islam-visit-window": HTMLCntFlexyViewIslamVisitWindowElement;
+        "cnt-flexy-view-islam-visit-window-1-0-0": HTMLCntFlexyViewIslamVisitWindow100Element;
         "cnt-flexy-view-islam-visit-wrapper": HTMLCntFlexyViewIslamVisitWrapperElement;
         "cnt-flexy-view-islam-visit-wrapper-1-0-0": HTMLCntFlexyViewIslamVisitWrapper100Element;
         "my-component": HTMLMyComponentElement;
@@ -367,6 +387,16 @@ declare namespace LocalJSX {
         "pathToAssets"?: string;
         "payload"?: any;
     }
+    interface CntFlexyViewIslamVisitWindow {
+        /**
+          * Закрытие модального окна формы
+         */
+        "onCloseForm"?: (event: CustomEvent<any>) => void;
+        "payload"?: any;
+    }
+    interface CntFlexyViewIslamVisitWindow100 {
+        "payload"?: any;
+    }
     interface CntFlexyViewIslamVisitWrapper {
         "forCarousel"?: any;
         /**
@@ -426,6 +456,8 @@ declare namespace LocalJSX {
         "cnt-flexy-view-islam-visit-tell-1-0-0": CntFlexyViewIslamVisitTell100;
         "cnt-flexy-view-islam-visit-welcome": CntFlexyViewIslamVisitWelcome;
         "cnt-flexy-view-islam-visit-welcome-1-0-0": CntFlexyViewIslamVisitWelcome100;
+        "cnt-flexy-view-islam-visit-window": CntFlexyViewIslamVisitWindow;
+        "cnt-flexy-view-islam-visit-window-1-0-0": CntFlexyViewIslamVisitWindow100;
         "cnt-flexy-view-islam-visit-wrapper": CntFlexyViewIslamVisitWrapper;
         "cnt-flexy-view-islam-visit-wrapper-1-0-0": CntFlexyViewIslamVisitWrapper100;
         "my-component": MyComponent;
@@ -447,6 +479,8 @@ declare module "@stencil/core" {
             "cnt-flexy-view-islam-visit-tell-1-0-0": LocalJSX.CntFlexyViewIslamVisitTell100 & JSXBase.HTMLAttributes<HTMLCntFlexyViewIslamVisitTell100Element>;
             "cnt-flexy-view-islam-visit-welcome": LocalJSX.CntFlexyViewIslamVisitWelcome & JSXBase.HTMLAttributes<HTMLCntFlexyViewIslamVisitWelcomeElement>;
             "cnt-flexy-view-islam-visit-welcome-1-0-0": LocalJSX.CntFlexyViewIslamVisitWelcome100 & JSXBase.HTMLAttributes<HTMLCntFlexyViewIslamVisitWelcome100Element>;
+            "cnt-flexy-view-islam-visit-window": LocalJSX.CntFlexyViewIslamVisitWindow & JSXBase.HTMLAttributes<HTMLCntFlexyViewIslamVisitWindowElement>;
+            "cnt-flexy-view-islam-visit-window-1-0-0": LocalJSX.CntFlexyViewIslamVisitWindow100 & JSXBase.HTMLAttributes<HTMLCntFlexyViewIslamVisitWindow100Element>;
             "cnt-flexy-view-islam-visit-wrapper": LocalJSX.CntFlexyViewIslamVisitWrapper & JSXBase.HTMLAttributes<HTMLCntFlexyViewIslamVisitWrapperElement>;
             "cnt-flexy-view-islam-visit-wrapper-1-0-0": LocalJSX.CntFlexyViewIslamVisitWrapper100 & JSXBase.HTMLAttributes<HTMLCntFlexyViewIslamVisitWrapper100Element>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;

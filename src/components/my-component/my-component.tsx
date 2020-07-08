@@ -1,11 +1,11 @@
-import {Component, h,} from '@stencil/core';
+import {Component, h, State,} from '@stencil/core';
 import {
   forCreate,
   forFooter,
   forHeader,
   forInput,
   forTell,
-  forWelcome,
+  forWelcome, forWindow,
   forWrapper
 } from "../../utils/mock";
 
@@ -16,6 +16,9 @@ import {
   scoped: true,
 })
 export class MyComponent {
+
+  @State() popupComplited: boolean;
+
   render() {
     return (
       <div>
@@ -30,6 +33,7 @@ export class MyComponent {
         <cnt-flexy-view-islam-visit-tell-1-0-0 payload={forTell}
                                                pathToAssets={this.testPathToAssets}/>
         <cnt-flexy-view-islam-visit-input-1-0-0 payload={forInput}/>
+        <cnt-flexy-view-islam-visit-window-1-0-0 payload={forWindow}/>
         <cnt-flexy-view-islam-visit-footer-1-0-0 categories={forFooter}/>
       </div>
     )
@@ -39,5 +43,19 @@ export class MyComponent {
    */
   public testPathToAssets =
     "http://cdn.ramman.net/flexy-view/islam/visit/1.01/assets/";
+
+  /**
+   * Вызов модального окна формы
+   */
+  public openForm() {
+    this.popupComplited = true;
+  }
+
+  /**
+   * Закрытие модального окна формы
+   */
+  public closeForm() {
+    this.popupComplited = false;
+  }
 }
 

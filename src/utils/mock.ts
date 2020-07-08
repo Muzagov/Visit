@@ -69,7 +69,8 @@ export const forInput = [
   {
     id: 1,
     button: 'Subscribe',
-    text: 'By submitting your email, you agree to receive product updates about Page. You can unsubscribe anytime. For more information about our privacy policies, please visit our help center'
+    text: 'By submitting your email, you agree to receive product updates about Page. You can unsubscribe anytime. For more information about our privacy policies, please visit our help center',
+    placeholder: 'Enter your email to get updates'
   }
 ];
 
@@ -82,4 +83,30 @@ export const forFooter = [
     subtext: '© 2020 Page Inc.'
   }
 ];
+
+export const forWindow = [
+  {
+    Heading: 'Share',
+    Exit: 'x',
+    TwitterIcon: 'fa fa-twitter',
+    TwitterText: 'Twitter',
+    FacebookIcon: 'fa fa-facebook-official',
+    FacebookText: 'Facebook',
+    RedditIcon: 'fa fa-reddit-alien',
+    RedditText: 'Reddit',
+    InstagramIcon: 'fa fa-instagram',
+    InstagramText: 'Instagram',
+    WhatsappIcon: 'fa fa-whatsapp',
+    WhatsappText: 'Whatsapp',
+    MessengerIcon: 'fa fa-commenting-o',
+    MessengerText: 'Messenger',
+    TelegramIcon: 'fa fa-telegram',
+    TelegramText: 'Telegram',
+    WeChatIcon: 'fa fa-weixin',
+    WeChatText: 'WeChat',
+    link: 'Page Link',
+    input: 'https://www.arcadio.app/acodyssey',
+    LinkIcon: 'fa fa-link'
+  }
+]
 

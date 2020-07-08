@@ -38,7 +38,7 @@ export class CntFlexyViewIslamVisitInput implements ComponentInterface {
               <button class="btn1" onClick={() => this.clickInputButton.emit('InputButton')}>{item.button}</button>
             </div>
             <div class="subscribe">
-            <input type="text" placeholder="Enter your email to get updates" class="input" onClick={() => this.clickInput.emit('Input')}/>
+            <input type="text" placeholder={item.placeholder} class="input" onClick={() => this.clickInput.emit('Input')}/>
           </div>
           </div>
             <div class="col-md-6">
