@@ -152,82 +152,89 @@ export class CntFlexyViewIslamWindow implements ComponentInterface {
                   {item.Heading}
                 </div>
               </div>
-                <div class="col-auto text-right" onClick={ () => this.closeForm.emit()}>
+                <div class="col-2 text-right" onClick={ () => this.closeForm.emit()}>
                   <div class="exit" onClick={() => this.clickWindowExit.emit('WindowExit')}>
                     {item.Exit}
                   </div>
                 </div>
-              <div class="col-auto">
-                <div class="twitter"  onClick={() => this.clickWindowTwitter.emit('WindowTwitter')}>
-                  <i class={item.TwitterIcon}/>
-                </div>
-                <div class="twitterText"  onClick={() => this.clickWindowTwitterText.emit('WindowTwitterText')}>
-                  {item.TwitterText}
-                </div>
-              </div>
+                <div class="col-12">
+                  <div class="myBlock">
+                   <div class="topBlock d-flex">
+                     <div class="col-auto">
+                       <div class="twitter" onClick={() => this.clickWindowTwitter.emit('WindowTwitter')}>
+                         <i class={item.TwitterIcon}/>
+                       </div>
+                       <div class="twitterText"  onClick={() => this.clickWindowTwitterText.emit('WindowTwitterText')}>
+                         {item.TwitterText}
+                       </div>
+                     </div>
 
-              <div class="col-auto">
-                <div class="facebook">
-                  <i class={item.FacebookIcon}  onClick={() => this.clickWindowFacebook.emit('WindowFacebook')}/>
-                </div>
-                <div class="facebookText" onClick={() => this.clickWindowFacebookText.emit('WindowFacebookText')}>
-                  {item.FacebookText}
-                </div>
-              </div>
+                     <div class="col-auto">
+                       <div class="facebook">
+                         <i class={item.FacebookIcon}  onClick={() => this.clickWindowFacebook.emit('WindowFacebook')}/>
+                       </div>
+                       <div class="facebookText" onClick={() => this.clickWindowFacebookText.emit('WindowFacebookText')}>
+                         {item.FacebookText}
+                       </div>
+                     </div>
 
-              <div class="col-auto">
-                <div class="reddit" onClick={() => this.clickWindowReddit.emit('WindowReddit')}>
-                  <i class={item.RedditIcon}/>
-                </div>
-                <div class="redditText" onClick={() => this.clickWindowRedditText.emit('WindowRedditText')}>
-                  {item.RedditText}
-                </div>
-              </div>
+                     <div class="col-auto">
+                       <div class="reddit" onClick={() => this.clickWindowReddit.emit('WindowReddit')}>
+                         <i class={item.RedditIcon}/>
+                       </div>
+                       <div class="redditText" onClick={() => this.clickWindowRedditText.emit('WindowRedditText')}>
+                         {item.RedditText}
+                       </div>
+                     </div>
 
-              <div class="col-auto">
-                <div class="instagram" onClick={() => this.clickWindowInstagram.emit('WindowInstagram')}>
-                  <i class={item.InstagramIcon}/>
-                </div>
-                <div class="instagramText" onClick={() => this.clickWindowInstagramText.emit('WindowInstagramText')}>
-                  {item.InstagramText}
-                </div>
-              </div>
+                     <div class="col-auto">
+                       <div class="instagram" onClick={() => this.clickWindowInstagram.emit('WindowInstagram')}>
+                         <i class={item.InstagramIcon}/>
+                       </div>
+                       <div class="instagramText" onClick={() => this.clickWindowInstagramText.emit('WindowInstagramText')}>
+                         {item.InstagramText}
+                       </div>
+                     </div>
+                   </div>
+                     <div class="bottomBlock d-flex">
+                       <div class="col-auto">
+                         <div class="whatsapp" onClick={() => this.clickWindowWhatsapp.emit('WindowWhatsapp')}>
+                           <i class={item.WhatsappIcon}/>
+                         </div>
+                         <div class="whatsappText" onClick={() => this.clickWindowWhatsappText.emit('WindowWhatsappText')}>
+                           {item.WhatsappText}
+                         </div>
+                       </div>
 
-              <div class="col-auto">
-                <div class="whatsapp" onClick={() => this.clickWindowWhatsapp.emit('WindowWhatsapp')}>
-                  <i class={item.WhatsappIcon}/>
-                </div>
-                <div class="whatsappText" onClick={() => this.clickWindowWhatsappText.emit('WindowWhatsappText')}>
-                  {item.WhatsappText}
-                </div>
-              </div>
+                       <div class="col-auto">
+                         <div class="messenger" onClick={() => this.clickWindowMessenger.emit('WindowMessenger')}>
+                           <i class={item.MessengerIcon}/>
+                         </div>
+                         <div class="messengerText" onClick={() => this.clickWindowMessengerText.emit('WindowMessengerText')}>
+                           {item.MessengerText}
+                         </div>
+                       </div>
 
-              <div class="col-auto">
-                <div class="messenger" onClick={() => this.clickWindowMessenger.emit('WindowMessenger')}>
-                  <i class={item.MessengerIcon}/>
-                </div>
-                <div class="messengerText" onClick={() => this.clickWindowMessengerText.emit('WindowMessengerText')}>
-                  {item.MessengerText}
-                </div>
-              </div>
+                       <div class="col-auto">
+                         <div class="telegram" onClick={() => this.clickWindowTelegram.emit('WindowTelegram')}>
+                           <i class={item.TelegramIcon}/>
+                         </div>
+                         <div class="telegramText" onClick={() => this.clickWindowTelegramText.emit('WindowTelegramText')}>
+                           {item.TelegramText}
+                         </div>
+                       </div>
 
-              <div class="col-auto">
-                <div class="telegram" onClick={() => this.clickWindowTelegram.emit('WindowTelegram')}>
-                  <i class={item.TelegramIcon}/>
+                       <div class="col-auto">
+                         <div class="weChat" onClick={() => this.clickWindowWeChat.emit('WindowWeChat')}>
+                           <i class={item.WeChatIcon}/>
+                         </div>
+                         <div class="weChatText" onClick={() => this.clickWindowWeChat.emit('WindowWeChatText')}>
+                           {item.WeChatText}
+                         </div>
+                       </div>
+                     </div>
+                  </div>
                 </div>
-                <div class="telegramText" onClick={() => this.clickWindowTelegramText.emit('WindowTelegramText')}>
-                  {item.TelegramText}
-                </div>
-              </div>
-
-              <div class="col-auto">
-                <div class="weChat" onClick={() => this.clickWindowWeChat.emit('WindowWeChat')}>
-                  <i class={item.WeChatIcon}/>
-                </div>
-                <div class="weChatText" onClick={() => this.clickWindowWeChat.emit('WindowWeChatText')}>
-                  {item.WeChatText}
-                </div>
-              </div>
               <div class="col-12">
                 <div class="link" onClick={() => this.clickWindowLink.emit('WindowLink')}>
                   {item.link}
