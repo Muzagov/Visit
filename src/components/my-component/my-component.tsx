@@ -29,26 +29,26 @@ export class MyComponent {
     return (
       <div >
         {
-          this.popupComplited ? <cnt-flexy-view-islam-window-1-0-0 payload={forWindow} onCloseForm={() => {
+          this.popupComplited ? <cnt-flexy-view-islam-window-1_01 payload={forWindow} onCloseForm={() => {
               this.closeForm();
             }}/> :
             ''
         }
 
         <div onClick={ () => this.openForm()}>
-        <cnt-flexy-view-islam-visit-welcome-1-0-0 payload={forWelcome}
+        <cnt-flexy-view-islam-visit-welcome-1_01  payload={forWelcome}
                                                   pathToAssets={this.testPathToAssets}/>
-        <cnt-flexy-view-islam-visit-header-1-0-0 categories={forHeader}
+        <cnt-flexy-view-islam-visit-header-1_01  categories={forHeader}
                                                  pathToAssets={this.testPathToAssets}/>
-        <cnt-flexy-view-islam-visit-wrapper-1-0-0 payload={forWrapper}
+        <cnt-flexy-view-islam-visit-wrapper-1_01  payload={forWrapper}
                                                   pathToAssets={this.testPathToAssets}/>
-        <cnt-flexy-view-islam-visit-create-1-0-0 payload={forCreate}
+        <cnt-flexy-view-islam-visit-create-1_01  payload={forCreate}
                                                  pathToAssets={this.testPathToAssets}/>
-        <cnt-flexy-view-islam-visit-tell-1-0-0 payload={forTell}
+        <cnt-flexy-view-islam-visit-tell-1_01  payload={forTell}
                                                pathToAssets={this.testPathToAssets}/>
-        <cnt-flexy-view-islam-visit-input-1-0-0 payload={forInput}/>
+        <cnt-flexy-view-islam-visit-input-1_01  payload={forInput}/>
 
-        <cnt-flexy-view-islam-visit-footer-1-0-0 categories={forFooter}/>
+        <cnt-flexy-view-islam-visit-footer-1_01  categories={forFooter}/>
         </div>
       </div>
     )

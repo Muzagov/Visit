@@ -107,7 +107,7 @@ export const forWindow = [
     WeChatText: 'WeChat',
     link: 'Page Link',
     input: 'https://www.arcadio.app/acodyssey',
-    LinkIcon: 'fa fa-link'
+    LinkIcon: 'fa fa-clone'
   }
 ]
 
