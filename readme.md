@@ -19,4 +19,4 @@
 - cnt-flexy-view-islam-visit-footer-1_01
 
 
--  [Моя вёрстка](https://Muzagov/Page/)
+-  [Моя вёрстка](https://Muzagov/page/)
